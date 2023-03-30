@@ -1,6 +1,9 @@
-# Transform audio from a YouTube video to text
-# Author: Javed Ali
-# Date: 30 March 2023
+# Transform an audio from a YouTube video to text script
+
+# Description: This script will ask the user for a YouTube video URL, download the audio from the video, transform it to text and save it to a txt file.
+
+# Javed Ali (www.javedali.net)
+
 
 # import required modules
 import os
@@ -43,3 +46,4 @@ result = model.transcribe("YoutubeAudios/audio.mp3")
 print(result["text"])
 
 create_and_open_txt(result["text"], "output.txt")
+
