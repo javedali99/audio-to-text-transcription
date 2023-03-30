@@ -41,9 +41,11 @@ audio_stream.download(output_path=output_path, filename=filename)
 
 print(f"Audio downloaded to {output_path}/{filename}")
 
+# Load the base model and transcribe the audio
 model = whisper.load_model("base")
 result = model.transcribe("YoutubeAudios/audio.mp3")
 print(result["text"])
 
+# Create and open a txt file with the text
 create_and_open_txt(result["text"], "output.txt")
 
