@@ -66,7 +66,7 @@ This script is designed to facilitate the transcription of YouTube videos into t
    Enter the YouTube video URL: https://www.youtube.com/watch?v=XXXXXXXXXXX
    ```
 
-3. The script will download the audio, transcribe it, and save the transcription to a text file called `output.txt`.
+3. The script will download the audio, transcribe it, detect language and save the transcription to a text file called `output.txt`.
 
 4. Access the transcription by opening the `output.txt` file located in the same directory as the script.
 
