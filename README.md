@@ -1,10 +1,10 @@
-# YouTube Audio-to-Text Transcription 🤖🎬🎧📝
+# 🤖🎬 YouTube Audio-to-Text Transcription 🎧📝
 
 Unleash the power of automation with this sophisticated and user-friendly script that downloads audio from YouTube videos, transcribes the content into text, and saves the transcription to a text file. Save time, effort, and resources by harnessing cutting-edge technology to streamline the transcription process.
 
 ## Table of Contents
 
-- [YouTube Audio-to-Text Transcription 🤖🎬🎧📝](#youtube-audio-to-text-transcription-)
+- [🤖🎬 YouTube Audio-to-Text Transcription 🎧📝](#-youtube-audio-to-text-transcription-)
   - [Table of Contents](#table-of-contents)
   - [Detailed Description](#detailed-description)
   - [Key Features](#key-features)
