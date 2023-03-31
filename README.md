@@ -38,6 +38,7 @@ This script is designed to facilitate the transcription of YouTube videos into t
 - `pytube`: A lightweight Python library that enables the downloading of YouTube videos and the extraction of audio streams.
 
 - `whisper`: An advanced speech-to-text library that facilitates accurate and efficient transcription of audio files.
+- `langdetect`: A language detection library ported from Google's language-detection.
 
 ## Installation
 
@@ -50,6 +51,10 @@ This script is designed to facilitate the transcription of YouTube videos into t
 
    ```bash
    pip install git+https://github.com/openai/whisper.git
+   ```
+
+   ```bash
+   pip install langdetect
    ```
 
 ## Usage
@@ -66,9 +71,9 @@ This script is designed to facilitate the transcription of YouTube videos into t
    Enter the YouTube video URL: https://www.youtube.com/watch?v=XXXXXXXXXXX
    ```
 
-3. The script will download the audio, transcribe it, detect language and save the transcription to a text file called `output.txt`.
+3. The script will download the audio, transcribe it, detect language and save the transcription to a text file called `output_{language}.txt`.
 
-4. Access the transcription by opening the `output.txt` file located in the same directory as the script.
+4. Access the transcription by opening the `output_{language}.txt` file located in the same directory as the script.
 
 ## Workflow
 
@@ -76,7 +81,8 @@ This script is designed to facilitate the transcription of YouTube videos into t
 2. The `pytube` library is used to create a `YouTube` object and filter the audio stream.
 3. The audio stream is downloaded as an MP3 file and saved in the `YoutubeAudios` folder.
 4. The `whisper` library loads a base model and transcribes the downloaded audio into text.
-5. The transcription is saved to a text file named `output.txt` and opened for the user to view.
+5. The `langdetect` library detects language from the audio file automatically.
+6. The transcription is saved to a text file named `output_{language}.txt` and opened for the user to view.
 
 ## Contributing 🤝🌱
 
