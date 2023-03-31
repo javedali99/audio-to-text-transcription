@@ -14,6 +14,8 @@ Unleash the power of automation with this sophisticated and user-friendly script
   - [Usage](#usage)
   - [Workflow](#workflow)
   - [Contributing 🤝🌱](#contributing-)
+    - [Pull Requests](#pull-requests)
+    - [Issues](#issues)
 
 ## Detailed Description
 
@@ -78,14 +80,21 @@ This script is designed to facilitate the transcription of YouTube videos into t
 
 ## Contributing 🤝🌱
 
-We believe that collaboration and community-driven development are crucial to achieving the best results. Your contributions are highly valued and much appreciated. We welcome ideas, suggestions, and improvements from everyone. To contribute to this project, please follow these steps:
+Contributions from users are highly valued and appreciated. The ideas, suggestions, and improvements are welcome from everyone. There are two main ways to contribute to this project: through pull requests and issues.
 
-1. Fork the repository and create your branch from the `main` branch.
-2. Make your changes or additions to the code.
-3. Commit your changes, and push them to your branch.
-4. Open a pull request to the `main` branch with a clear and concise description of your changes.
+### Pull Requests
 
-Together, we can enhance this script, making it more efficient, user-friendly, and powerful. Thank you for being part of our community and contributing to the growth of this project! 🎉🙌
+1. Fork the repository and create a branch from the `main` branch.
+2. Make changes or additions to the code.
+3. Commit the changes, and push them to the branch.
+4. Open a pull request to the `main` branch with a clear and concise description of the changes.
+
+### Issues
+
+1. Navigate to the [Issues](https://github.com/javedali99/whisper-openai/issues) section of the repository.
+2. Check if there is an existing issue similar to the one you'd like to create.
+3. If there isn't an existing issue, create a new issue by clicking the "New issue" button.
+4. Provide a descriptive title and detailed information about the proposed changes that you want to potentially add to the current script.
 
 ---
 
