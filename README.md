@@ -1,6 +1,6 @@
 # 🤖🎬 YouTube Audio-to-Text Transcription 🎧📝
 
-Unleash the power of automation with this sophisticated and user-friendly script that downloads audio from YouTube videos, transcribes the content into text, and saves the transcription to a text file. Save time, effort, and resources by harnessing cutting-edge technology to streamline the transcription process.
+Unleash the power of automation with this sophisticated and user-friendly script that downloads audio from YouTube videos, transcribes the content into text, detects the language of the transcribed text, and saves the transcription to a text file. Save time, effort, and resources by harnessing cutting-edge technology to streamline the transcription process.
 
 ## Table of Contents
 
@@ -30,7 +30,7 @@ This script is designed to facilitate the transcription of YouTube videos into t
 
 ## Prerequisites
 
-1. Python 3.9+
+1. Python 3.6+
 2. `pip` to install required libraries
 
 ## Required Libraries
@@ -81,8 +81,8 @@ This script is designed to facilitate the transcription of YouTube videos into t
 2. The `pytube` library is used to create a `YouTube` object and filter the audio stream.
 3. The audio stream is downloaded as an MP3 file and saved in the `YoutubeAudios` folder.
 4. The `whisper` library loads a base model and transcribes the downloaded audio into text.
-5. The `langdetect` library detects language from the audio file automatically.
-6. The transcription is saved to a text file named `output_{language}.txt` and opened for the user to view.
+5. The `langdetect` library detects the language of the transcribed text.
+6. The transcription is saved to a text file named `output_{language}.txt` with the language code as part of the filename and opened for the user to view.
 
 ## Contributing 🤝🌱
 
