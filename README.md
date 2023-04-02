@@ -17,7 +17,7 @@ Unleash the power of automation with this sophisticated and user-friendly script
     - [Pull Requests](#pull-requests)
     - [Issues](#issues)
 
-## Detailed Description
+## Description
 
 This script is designed to facilitate the transcription of YouTube videos into text format. It eliminates the need for time-consuming manual transcription by automating the process through a series of well-defined steps. The user-friendly interface allows users to input a YouTube video URL, which is then processed to extract the audio, convert it into text, and save the transcription as a text file. This efficient and convenient solution is ideal for those who require quick and accurate transcriptions for various purposes, such as research, content creation, or accessibility.
 
