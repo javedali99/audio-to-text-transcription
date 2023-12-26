@@ -1,11 +1,11 @@
 # 🤖🎬 YouTube Audio-to-Text Transcription 🎧📝
 
-Unleash the power of automation with this sophisticated and user-friendly script that downloads audio from YouTube videos, transcribes the content into text, detects the language of the transcribed text, and saves the transcription to a text file. Save time, effort, and resources by harnessing cutting-edge technology to streamline the transcription process.
+A sophisticated and user-friendly `Python` automation that downloads audio from YouTube videos, transcribes the content into text, detects the language of the transcribed text, and saves the transcription to a text file. Save time, effort, and resources by harnessing cutting-edge technology to streamline the transcription process.
 
 ## Table of Contents
 
 - [🤖🎬 YouTube Audio-to-Text Transcription 🎧📝](#-youtube-audio-to-text-transcription-)
-  - [Detailed Description](#description)
+  - [Description](#description)
   - [Key Features](#key-features)
   - [Prerequisites](#prerequisites)
   - [Required Libraries](#required-libraries)
@@ -70,7 +70,7 @@ This script is designed to facilitate the transcription of YouTube videos into t
    Enter the YouTube video URL: https://www.youtube.com/watch?v=XXXXXXXXXXX
    ```
 
-3. The script will download the audio, transcribe it, detect language and save the transcription to a text file called `output_{language}.txt`.
+3. The script will download the audio, transcribe it, detect language, and save the transcription to a text file called `output_{language}.txt`.
 
 4. Access the transcription by opening the `output_{language}.txt` file located in the same directory as the script.
 
@@ -85,7 +85,7 @@ This script is designed to facilitate the transcription of YouTube videos into t
 
 ## Contributing 🤝🌱
 
-Contributions from users are highly valued and appreciated. The ideas, suggestions, and improvements are welcome from everyone. There are two main ways to contribute to this project: through pull requests and issues.
+Contributions from users are highly valued and appreciated. There are two main ways to contribute to this project: through pull requests and issues.
 
 ### Pull Requests
 
