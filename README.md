@@ -5,8 +5,7 @@ Unleash the power of automation with this sophisticated and user-friendly script
 ## Table of Contents
 
 - [🤖🎬 YouTube Audio-to-Text Transcription 🎧📝](#-youtube-audio-to-text-transcription-)
-  - [Table of Contents](#table-of-contents)
-  - [Detailed Description](#detailed-description)
+  - [Detailed Description](#description)
   - [Key Features](#key-features)
   - [Prerequisites](#prerequisites)
   - [Required Libraries](#required-libraries)
