@@ -56,32 +56,108 @@ This script is designed to facilitate the transcription of YouTube videos into t
    pip install langdetect
    ```
 
+   3. Download FFmpeg and add it to environment variables.
+   Windows:
+   https://phoenixnap.com/kb/ffmpeg-windows
+   Mac:
+   https://phoenixnap.com/kb/ffmpeg-mac
+   Ubuntu:
+   https://phoenixnap.com/kb/install-ffmpeg-ubuntu
+      
 ## Usage
 
 1. Run the script:
 
    ```bash
-   python youtube_audio_to_text.py
+   python OpenAIWisperTranscriber.py
    ```
 
 2. When prompted, enter the YouTube video URL you wish to transcribe:
 
    ```
-   Enter the YouTube video URL: https://www.youtube.com/watch?v=XXXXXXXXXXX
+   Enter the YouTube video URL in this format: https://www.youtube.com/watch?v=XXXXXXXXXXX
    ```
 
-3. The script will download the audio, transcribe it, detect language, and save the transcription to a text file called `output_{language}.txt`.
+3. The script will download the audio, transcribe it, detect language, and save the transcription to a text file called `Transcription_{language}.txt`.
 
-4. Access the transcription by opening the `output_{language}.txt` file located in the same directory as the script.
+4. Access the transcription by opening the `Transcription_{language}.txt` file located in the same directory as the script.
 
 ## Workflow
 
 1. The user inputs a YouTube video URL when prompted.
 2. The `pytube` library is used to create a `YouTube` object and filter the audio stream.
-3. The audio stream is downloaded as an MP3 file and saved in the `YoutubeAudios` folder.
+3. The audio stream is downloaded as an MP3 file and saved in the `Audio` folder.
 4. The `whisper` library loads a base model and transcribes the downloaded audio into text.
 5. The `langdetect` library detects the language of the transcribed text.
-6. The transcription is saved to a text file named `output_{language}.txt` with the language code as part of the filename and opened for the user to view.
+6. The transcription is saved to a text file named `Transcription_{language}.txt` with the language code as part of the filename and opened for the user to view.
+
+## Known Issues
+
+Once in a few while, the punctuations gets ruined. Sometimes this happens for the whole transcript, sometimes it happens at the middle of it.
+
+Sometimes, the spelling is wrong, you can prompt ChatGPT to fix it or manually fix it using Cltr+R.
+
+Also, once a while, the script may throw an exception regarding some regex expression in `cipher.py` or some sorts randomly one day. This is believed to be caused by some sort of change on the YouTube server side. You can try some suggestion regarding modifying the regex expression suggested on StackOverflow which may or may not work, but usually, this script starts working again the next day or in a few hours. Meanwhile, you can prompt ChatGPT to transcribe off of the YouTube auto-generated transcript
+
+## Tips
+
+You can prompt ChatGPT to fix the puncutations when it happens:
+
+```bash
+Fix the punctuations or grammar below but keep the output verbatim:
+
+<insert generated text>
+```
+
+It may often picks up the wrong words, you can prompt ChatGPT to fix it and paste in the transcript, for example:
+
+```bash
+Below is a machine-generated transcript. Correct any misspellings and grammar but do not summarize the transcript or leave anything out:
+
+
+<insert generated text>
+```
+
+Or you can use the Cont+R and manually replace the mispellings with a text editor.
+
+Another way to get a transcript is that you can grab the transcript from YouTube, provided it has an auto-generated text, and paste it to chatgpt and ask it to transcribe it:
+
+```bash
+`You are a professional transcriber with 20 years of experience and you have been transcribing transcripts in verbatim for 20 years. You will turn a YouTube video transcript below into proper English format verbatim so I can watch the video and follow the transcript exactly word for word. Leave out any timestamps but do not leave out any context. Do not summarize anything in the output:
+
+
+<insert generated text>
+```
+
+As of GPT-3.5, it tends to summerize the youtube transcript if it is too long, so you may need to break it into parts and ask ChatGPT to do each individually.
+
+How to get YouTube transcript:
+https://www.descript.com/blog/article/transcript-of-youtube-videos
+
+You can ask ChatGPT to refine the transcript, like using this prompt for example:
+
+```bash
+Turn the transcript below, word for word, without leaving out any words or sentences. Correct any wrong English. Add section titles:
+
+
+<insert generated text>
+```
+
+Or prompt ChatGPT to process it into a summary like:
+
+```bash
+Summarize into key takeaways:
+
+<insert generated text>
+```
+
+You can even prompt ChatGPT to translate it into a different Language:
+
+```bash
+You are a professional translator with 20 years of experience and you have been translating transcripts in verbatim for 20 years. You will turn a YouTube video transcript below into proper <language> verbatim so I can watch the video and follow the transcript exactly word for word in that language. Leave out any timestamps but do not leave out any context. Do not summarize anything in the output:
+
+<insert generated text>
+```
 
 ## Contributing 🤝🌱
 
@@ -96,7 +172,7 @@ Contributions from users are highly valued and appreciated. There are two main w
 
 ### Issues
 
-1. Navigate to the [Issues](https://github.com/javedali99/whisper-openai/issues) section of the repository.
+1. Navigate to the [Issues](https://github.com/Ruinan-Ding/openai-wisper-transcriber/pulls) section of the repository.
 2. Check if there is an existing issue similar to the one you'd like to create.
 3. If there isn't an existing issue, create a new issue by clicking the "New issue" button.
 4. Provide a descriptive title and detailed information about the proposed changes that you want to potentially add to the current script.
