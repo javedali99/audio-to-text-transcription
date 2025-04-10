@@ -45,7 +45,7 @@ This script is designed to facilitate the transcription of YouTube videos into t
 2. Install the required libraries:
 
    ```bash
-   pip install pytube
+   pip install pytubefix
    ```
 
    ```bash
