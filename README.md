@@ -23,7 +23,7 @@ This script is designed to facilitate the transcription of YouTube videos into t
 ## Key Features
 
 - **User-friendly:** Designed for ease of use, the script prompts users to enter a YouTube video URL, minimizing the need for complicated setup processes.
-- **Efficient Audio Extraction:** The script utilizes the `pytube` library to effectively filter and download the audio stream from the specified YouTube video.
+- **Efficient Audio Extraction:** The script utilizes the `pytubefix` library to effectively filter and download the audio stream from the specified YouTube video.
 - **High-Quality Transcription:** The `whisper` library, a powerful speech-to-text tool, is employed to accurately transcribe the downloaded audio into text.
 - **Convenient Output:** The transcription is saved as a text file in the same directory as the script, ensuring easy access and sharing capabilities.
 
