@@ -34,7 +34,7 @@ This script is designed to facilitate the transcription of YouTube videos into t
 
 ## Required Libraries
 
-- `pytube`: A lightweight Python library that enables the downloading of YouTube videos and the extraction of audio streams.
+- `pytubefix`: A lightweight Python library that enables the downloading of YouTube videos and the extraction of audio streams.
 
 - `whisper`: An advanced speech-to-text library that facilitates accurate and efficient transcription of audio files.
 - `langdetect`: A language detection library ported from Google's language-detection.
@@ -83,7 +83,7 @@ This script is designed to facilitate the transcription of YouTube videos into t
 ## Workflow
 
 1. The user inputs a YouTube video URL when prompted.
-2. The `pytube` library is used to create a `YouTube` object and filter the audio stream.
+2. The `pytubefix` library is used to create a `YouTube` object and filter the audio stream.
 3. The audio stream is downloaded as an MP3 file and saved in the `YoutubeAudios` folder.
 4. The `whisper` library loads a base model and transcribes the downloaded audio into text.
 5. The `langdetect` library detects the language of the transcribed text.
